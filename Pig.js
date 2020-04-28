@@ -1,6 +1,6 @@
 class Pig extends BaseClass {
   constructor(x, y){
-    super(x,y,120,120);
+    super(x,y,60,60);
     this.image = loadImage("sprites/enemy.png");
     this.Visiblity = 255;
   }
@@ -15,7 +15,7 @@ class Pig extends BaseClass {
      push();
      this.Visiblity = this.Visiblity - 5;
      tint(255,this.Visiblity);
-     image(this.image, this.body.position.x, this.body.position.y, 120, 120);
+     image(this.image, this.body.position.x, this.body.position.y, 60, 60);
      pop();
    }
    
